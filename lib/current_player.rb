@@ -1,5 +1,3 @@
-board = ["   ", "   ", "   ", "   ", "   ", "   ", "   ", "   ", "   "]
-
 def turn_count[board]
   rounds = 0
   board.each do |playermark|
