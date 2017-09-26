@@ -1,4 +1,4 @@
-def turn_count[board]
+def turn_count(board)
   rounds = 0
   board.each do |playermark|
     if playermark = "X" || playermark ="O"
@@ -8,5 +8,10 @@ def turn_count[board]
   rounds
 end
 
-def current_player[board]
+def current_player(board)
+  if turn_count(board) % 1 == 0
+    "X"
+  else
+    "O"
+  end
 end
